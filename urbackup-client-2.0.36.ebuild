@@ -3,6 +3,7 @@
 # $Header: $
 
 EAPI=6
+inherit wxwidgets
 
 DESCRIPTION="Client for UrBackup server"
 HOMEPAGE="https://www.urbackup.org"
@@ -15,6 +16,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="gcc-fortify headless zlib"
 
 RDEPEND="
+	!headless? ( x11-libs/wxGTK:2.8 )
 	>=dev-libs/crypto++-5.1
 	zlib? ( sys-libs/zlib )"
 DEPEND="${RDEPEND}"
