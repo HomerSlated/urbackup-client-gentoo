@@ -1,0 +1,14 @@
+# ChangeLog for app-backup/urbackup-client
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/skel.ChangeLog,v 1.2 2006/02/22 02:08:04 hd_brummy Exp $
+
+  11 Dec 2016; HomerSlated ChangeLog:
+
+
+  commit f5a615b20ee7b7efa97e8a47b7aba9109e8f63bb
+  Author: HomerSlated <github@slated.org>
+  Date: Sun Dec 11 07:30:06 2016 +0000
+
+  First commit.
+
+
