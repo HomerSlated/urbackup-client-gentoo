@@ -23,13 +23,15 @@ DEPEND="${RDEPEND}"
 
 PATCHES=(
 	"${FILESDIR}/${P}-gcc-fortify.patch"
+	"${FILESDIR}/${P}-autoupdate.patch"
 )
 
 src_configure() {
 	econf \
 	$(use_enable gcc-fortify fortify) \
 	$(use_enable headless) \
-	$(use_with zlib)
+	$(use_with zlib) \
+	--disable-clientupdate
 }
 
 src_install() {
