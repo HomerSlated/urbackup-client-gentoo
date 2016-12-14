@@ -1,0 +1,11 @@
+--- urbackup-client-2.0.36.0/Makefile.in.orig	2016-12-14 09:48:27.808871387 +0000
++++ urbackup-client-2.0.36.0/Makefile.in	2016-12-14 10:07:13.401864089 +0000
+@@ -5358,6 +5358,8 @@
+ 
+ 	mkdir -p "$(DESTDIR)$(localstatedir)/urbackup"
+ 	mkdir -p "$(DESTDIR)$(localstatedir)/urbackup/data"
++	mkdir -p "$(DESTDIR)$(datadir)/man/man1"
++	$(INSTALL_DATA) $(srcdir)/docs/urbackupclientbackend.1 "$(DESTDIR)$(datadir)/man/man1/urbackupclientbackend.1"
+ 
+ @MACOSX_TRUE@@WITH_GUI_CLIENT_TRUE@install-data-local: urbackupclient/backup_scripts/list urbackupclient/backup_scripts/mariadbdump.conf urbackupclient/backup_scripts/mariadbdump \
+ @MACOSX_TRUE@@WITH_GUI_CLIENT_TRUE@					urbackupclient/backup_scripts/postgresqldump.conf urbackupclient/backup_scripts/postgresqldump \
