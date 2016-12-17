@@ -2,6 +2,21 @@
 # Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/skel.ChangeLog,v 1.2 2006/02/22 02:08:04 hd_brummy Exp $
 
+*urbackup-client-2.1.7 (17 Dec 2016)
+
+  17 Dec 2016; HomerSlated urbackup-client-2.0.36.ebuild,
+  +urbackup-client-2.1.7.ebuild, +logs/urbackup-client-2.1.7.0-build.log,
+  +files/urbackup-client-2.1.7-autoupdate.patch,
+  +files/urbackup-client-2.1.7-conf.patch,
+  +files/urbackup-client-2.1.7-gcc-fortify.patch,
+  +files/urbackup-client-2.1.7-locale.patch,
+  +files/urbackup-client-2.1.7-manpage.patch, metadata.xml:
+
+
+  Bumped to client version 2.1.7
+  Swutched to standard X and hardened USE flags
+
+
   14 Dec 2016; HomerSlated urbackup-client-2.0.36.ebuild,
   +files/urbackup-client-2.0.36-conf.patch,
   +files/urbackup-client-2.0.36-locale.patch,

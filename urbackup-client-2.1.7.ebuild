@@ -10,7 +10,7 @@ PLOCALE_BACKUP="en"
 
 DESCRIPTION="Client for UrBackup server"
 HOMEPAGE="https://www.urbackup.org"
-SRC_URI="https://hndl.urbackup.org/Client/${PV}/${P}.tar.gz"
+SRC_URI="https://ssl.webpack.de/beta.urbackup.org/Client/${PV}%20beta/${P}.0.tar.gz"
 S=${WORKDIR}/${P}.0
 
 SLOT="0"

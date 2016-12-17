@@ -1,0 +1,48 @@
+--- urbackup-client-2.1.7.0/Makefile.in.orig	2016-12-17 06:51:08.068721043 +0000
++++ urbackup-client-2.1.7.0/Makefile.in	2016-12-17 06:53:14.737719361 +0000
+@@ -1063,7 +1063,7 @@
+ 	$(fsimageplugin_headers) $(urbackupclientctl_headers) \
+ 	$(client_headers) $(tclap_headers) $(urbackupclient_headers) \
+ 	$(cryptopp_headers)
+-EXTRA_DIST_GUI = client/info.txt client/data/backup-bad.xpm client/data/backup-ok.xpm client/data/backup-progress.xpm client/data/backup-progress-pause.xpm client/data/backup-no-server.xpm client/data/backup-no-recent.xpm client/data/backup-indexing.xpm client/data/logo1.png client/data/lang/it/urbackup.mo client/data/lang/pl/urbackup.mo client/data/lang/pt_BR/urbackup.mo client/data/lang/sk/urbackup.mo client/data/lang/zh_TW/urbackup.mo client/data/lang/zh_CN/urbackup.mo client/data/lang/de/urbackup.mo client/data/lang/es/urbackup.mo client/data/lang/fr/urbackup.mo client/data/lang/ru/urbackup.mo client/data/lang/uk/urbackup.mo client/data/lang/da/urbackup.mo client/data/lang/nl/urbackup.mo client/data/lang/fa/urbackup.mo client/data/lang/cs/urbackup.mo client/gui/GUISetupWizard.h client/SetupWizard.h
++EXTRA_DIST_GUI = client/info.txt client/data/backup-bad.xpm client/data/backup-ok.xpm client/data/backup-progress.xpm client/data/backup-progress-pause.xpm client/data/backup-no-server.xpm client/data/backup-no-recent.xpm client/data/backup-indexing.xpm client/data/logo1.png client/gui/GUISetupWizard.h client/SetupWizard.h
+ EXTRA_DIST = docs/urbackupclientbackend.1 init.d_client \
+ 	init.d_client_rh defaults_client $(EXTRA_DIST_GUI) \
+ 	tclap/COPYING tclap/AUTHORS \
+@@ -5461,36 +5461,6 @@
+ @MACOSX_TRUE@@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) $(srcdir)/client/data/*.ico "$(DESTDIR)$(datadir)/urbackup/"
+ @MACOSX_FALSE@@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) $(srcdir)/client/data/*.xpm "$(DESTDIR)$(datadir)/urbackup/"
+ @WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) $(srcdir)/client/info.txt "$(DESTDIR)$(datadir)/urbackup/"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/it"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/pl"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/pt_BR"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/sk"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/zh_TW"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/zh_CN"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/de"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/es"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/fr"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/ru"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/uk"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/da"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/nl"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/fa"
+-@WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup/lang/cs"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/it/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/it/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/pl/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/pl/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/pt_BR/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/pt_BR/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/sk/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/sk/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/zh_TW/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/zh_TW/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/zh_CN/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/zh_CN/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/de/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/de/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/es/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/es/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/fr/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/fr/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/ru/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/ru/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/uk/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/uk/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/da/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/da/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/nl/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/nl/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/fa/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/fa/urbackup.mo"
+-@WITH_GUI_CLIENT_TRUE@	$(INSTALL_DATA) "$(srcdir)/client/data/lang/cs/urbackup.mo" "$(DESTDIR)$(datadir)/urbackup/lang/cs/urbackup.mo"
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

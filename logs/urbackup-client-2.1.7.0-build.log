@@ -1,0 +1,649 @@
+patching file urbackup-client-2.1.7.0/Makefile.in
+Configuring with "--prefix=/usr/local --enable-headless --disable-clientupdate"
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU Objective C++ compiler... no
+checking whether g++ accepts -g... no
+checking dependency style of g++... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking how to run the C++ preprocessor... g++ -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking spawn.h usability... yes
+checking spawn.h presence... yes
+checking for spawn.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking whether the compiler implements namespaces... yes
+checking sstream usability... yes
+checking sstream presence... yes
+checking for sstream... yes
+checking whether the STL defines stringstream... yes
+checking strstream usability... yes
+checking strstream presence... yes
+checking for strstream... yes
+checking whether the STL defines strstream... yes
+checking whether C++ compiler accepts -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIE... yes
+checking whether the linker accepts -Wl,-z,relro... yes
+checking for operating system... checking for library containing gethostbyname... none required
+checking for library containing socket... none required
+checking how to run the C preprocessor... gcc -E
+checking if zlib is wanted... yes
+checking for inflateEnd in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... (cached) yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking for strftime... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for select... yes
+checking for socket... yes
+checking for strstr... yes
+checking for syncfs... yes
+checking for fallocate64... yes
+checking for dlopen in -ldl... yes
+checking for crypto++ version >= 5.1... yes (version 5.6.2, installed)
+checking for library containing clock_gettime... none required
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-am
+make[1]: Entering directory '/root/tmp/urbackup/urbackup-client-2.1.7.0'
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientctl-stringtools.o -MD -MP -MF .deps/urbackupclientctl-stringtools.Tpo -c -o urbackupclientctl-stringtools.o `test -f 'stringtools.cpp' || echo './'`stringtools.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-AcceptThread.o -MD -MP -MF .deps/urbackupclientbackend-AcceptThread.Tpo -c -o urbackupclientbackend-AcceptThread.o `test -f 'AcceptThread.cpp' || echo './'`AcceptThread.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Client.o -MD -MP -MF .deps/urbackupclientbackend-Client.Tpo -c -o urbackupclientbackend-Client.o `test -f 'Client.cpp' || echo './'`Client.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Database.o -MD -MP -MF .deps/urbackupclientbackend-Database.Tpo -c -o urbackupclientbackend-Database.o `test -f 'Database.cpp' || echo './'`Database.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Query.o -MD -MP -MF .deps/urbackupclientbackend-Query.Tpo -c -o urbackupclientbackend-Query.o `test -f 'Query.cpp' || echo './'`Query.cpp
+mv -f .deps/urbackupclientbackend-Client.Tpo .deps/urbackupclientbackend-Client.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-SelectThread.o -MD -MP -MF .deps/urbackupclientbackend-SelectThread.Tpo -c -o urbackupclientbackend-SelectThread.o `test -f 'SelectThread.cpp' || echo './'`SelectThread.cpp
+mv -f .deps/urbackupclientbackend-AcceptThread.Tpo .deps/urbackupclientbackend-AcceptThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Server.o -MD -MP -MF .deps/urbackupclientbackend-Server.Tpo -c -o urbackupclientbackend-Server.o `test -f 'Server.cpp' || echo './'`Server.cpp
+mv -f .deps/urbackupclientbackend-Query.Tpo .deps/urbackupclientbackend-Query.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-ServerLinux.o -MD -MP -MF .deps/urbackupclientbackend-ServerLinux.Tpo -c -o urbackupclientbackend-ServerLinux.o `test -f 'ServerLinux.cpp' || echo './'`ServerLinux.cpp
+mv -f .deps/urbackupclientbackend-ServerLinux.Tpo .deps/urbackupclientbackend-ServerLinux.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-ServiceAcceptor.o -MD -MP -MF .deps/urbackupclientbackend-ServiceAcceptor.Tpo -c -o urbackupclientbackend-ServiceAcceptor.o `test -f 'ServiceAcceptor.cpp' || echo './'`ServiceAcceptor.cpp
+mv -f .deps/urbackupclientbackend-SelectThread.Tpo .deps/urbackupclientbackend-SelectThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-ServiceWorker.o -MD -MP -MF .deps/urbackupclientbackend-ServiceWorker.Tpo -c -o urbackupclientbackend-ServiceWorker.o `test -f 'ServiceWorker.cpp' || echo './'`ServiceWorker.cpp
+mv -f .deps/urbackupclientbackend-Database.Tpo .deps/urbackupclientbackend-Database.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-SessionMgr.o -MD -MP -MF .deps/urbackupclientbackend-SessionMgr.Tpo -c -o urbackupclientbackend-SessionMgr.o `test -f 'SessionMgr.cpp' || echo './'`SessionMgr.cpp
+Server.cpp: In member function ‘virtual void CServer::setLogFile(const string&, std::string)’:
+Server.cpp:485:47: warning: ignoring return value of ‘int chown(const char*, __uid_t, __gid_t)’, declared with attribute warn_unused_result [-Wunused-result]
+     chown(plf.c_str(), pw->pw_uid, pw->pw_gid);
+                                               ^
+ServiceAcceptor.cpp: In constructor ‘CServiceAcceptor::CServiceAcceptor(IService*, std::string, short unsigned int, int, IServer::BindTarget)’:
+ServiceAcceptor.cpp:41:13: warning: ignoring return value of ‘int pipe(int*)’, declared with attribute warn_unused_result [-Wunused-result]
+  pipe(xpipe);
+             ^
+ServiceAcceptor.cpp: In destructor ‘CServiceAcceptor::~CServiceAcceptor()’:
+ServiceAcceptor.cpp:116:25: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+  write(xpipe[1], &ch, 1);
+                         ^
+mv -f .deps/urbackupclientctl-stringtools.Tpo .deps/urbackupclientctl-stringtools.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-StreamPipe.o -MD -MP -MF .deps/urbackupclientbackend-StreamPipe.Tpo -c -o urbackupclientbackend-StreamPipe.o `test -f 'StreamPipe.cpp' || echo './'`StreamPipe.cpp
+mv -f .deps/urbackupclientbackend-ServiceAcceptor.Tpo .deps/urbackupclientbackend-ServiceAcceptor.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Template.o -MD -MP -MF .deps/urbackupclientbackend-Template.Tpo -c -o urbackupclientbackend-Template.o `test -f 'Template.cpp' || echo './'`Template.cpp
+mv -f .deps/urbackupclientbackend-SessionMgr.Tpo .deps/urbackupclientbackend-SessionMgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-WorkerThread.o -MD -MP -MF .deps/urbackupclientbackend-WorkerThread.Tpo -c -o urbackupclientbackend-WorkerThread.o `test -f 'WorkerThread.cpp' || echo './'`WorkerThread.cpp
+mv -f .deps/urbackupclientbackend-StreamPipe.Tpo .deps/urbackupclientbackend-StreamPipe.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-main.o -MD -MP -MF .deps/urbackupclientbackend-main.Tpo -c -o urbackupclientbackend-main.o `test -f 'main.cpp' || echo './'`main.cpp
+mv -f .deps/urbackupclientbackend-ServiceWorker.Tpo .deps/urbackupclientbackend-ServiceWorker.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-md5.o -MD -MP -MF .deps/urbackupclientbackend-md5.Tpo -c -o urbackupclientbackend-md5.o `test -f 'md5.cpp' || echo './'`md5.cpp
+main.cpp: In function ‘int main_fkt(int, char**)’:
+main.cpp:377:11: warning: ignoring return value of ‘int dup(int)’, declared with attribute warn_unused_result [-Wunused-result]
+     dup(i);
+           ^
+main.cpp:378:11: warning: ignoring return value of ‘int dup(int)’, declared with attribute warn_unused_result [-Wunused-result]
+     dup(i);
+           ^
+main.cpp:392:49: warning: ignoring return value of ‘int chdir(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+   chdir((Server->getServerWorkingDir()).c_str());
+                                                 ^
+main.cpp:453:22: warning: ignoring return value of ‘int setgid(__gid_t)’, declared with attribute warn_unused_result [-Wunused-result]
+    setgid(pw->pw_gid);
+                      ^
+main.cpp:454:22: warning: ignoring return value of ‘int setuid(__uid_t)’, declared with attribute warn_unused_result [-Wunused-result]
+    setuid(pw->pw_uid);
+                      ^
+mv -f .deps/urbackupclientbackend-md5.Tpo .deps/urbackupclientbackend-md5.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-stringtools.o -MD -MP -MF .deps/urbackupclientbackend-stringtools.Tpo -c -o urbackupclientbackend-stringtools.o `test -f 'stringtools.cpp' || echo './'`stringtools.cpp
+mv -f .deps/urbackupclientbackend-main.Tpo .deps/urbackupclientbackend-main.Po
+mv -f .deps/urbackupclientbackend-WorkerThread.Tpo .deps/urbackupclientbackend-WorkerThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Mutex_lin.o -MD -MP -MF .deps/urbackupclientbackend-Mutex_lin.Tpo -c -o urbackupclientbackend-Mutex_lin.o `test -f 'Mutex_lin.cpp' || echo './'`Mutex_lin.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-LoadbalancerClient.o -MD -MP -MF .deps/urbackupclientbackend-LoadbalancerClient.Tpo -c -o urbackupclientbackend-LoadbalancerClient.o `test -f 'LoadbalancerClient.cpp' || echo './'`LoadbalancerClient.cpp
+mv -f .deps/urbackupclientbackend-Template.Tpo .deps/urbackupclientbackend-Template.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-DBSettingsReader.o -MD -MP -MF .deps/urbackupclientbackend-DBSettingsReader.Tpo -c -o urbackupclientbackend-DBSettingsReader.o `test -f 'DBSettingsReader.cpp' || echo './'`DBSettingsReader.cpp
+mv -f .deps/urbackupclientbackend-Mutex_lin.Tpo .deps/urbackupclientbackend-Mutex_lin.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-file_common.o -MD -MP -MF .deps/urbackupclientbackend-file_common.Tpo -c -o urbackupclientbackend-file_common.o `test -f 'file_common.cpp' || echo './'`file_common.cpp
+mv -f .deps/urbackupclientbackend-LoadbalancerClient.Tpo .deps/urbackupclientbackend-LoadbalancerClient.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-file_fstream.o -MD -MP -MF .deps/urbackupclientbackend-file_fstream.Tpo -c -o urbackupclientbackend-file_fstream.o `test -f 'file_fstream.cpp' || echo './'`file_fstream.cpp
+mv -f .deps/urbackupclientbackend-file_fstream.Tpo .deps/urbackupclientbackend-file_fstream.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-file_linux.o -MD -MP -MF .deps/urbackupclientbackend-file_linux.Tpo -c -o urbackupclientbackend-file_linux.o `test -f 'file_linux.cpp' || echo './'`file_linux.cpp
+mv -f .deps/urbackupclientbackend-file_common.Tpo .deps/urbackupclientbackend-file_common.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-FileSettingsReader.o -MD -MP -MF .deps/urbackupclientbackend-FileSettingsReader.Tpo -c -o urbackupclientbackend-FileSettingsReader.o `test -f 'FileSettingsReader.cpp' || echo './'`FileSettingsReader.cpp
+mv -f .deps/urbackupclientbackend-file_linux.Tpo .deps/urbackupclientbackend-file_linux.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-LookupService.o -MD -MP -MF .deps/urbackupclientbackend-LookupService.Tpo -c -o urbackupclientbackend-LookupService.o `test -f 'LookupService.cpp' || echo './'`LookupService.cpp
+mv -f .deps/urbackupclientbackend-DBSettingsReader.Tpo .deps/urbackupclientbackend-DBSettingsReader.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-SettingsReader.o -MD -MP -MF .deps/urbackupclientbackend-SettingsReader.Tpo -c -o urbackupclientbackend-SettingsReader.o `test -f 'SettingsReader.cpp' || echo './'`SettingsReader.cpp
+mv -f .deps/urbackupclientbackend-Server.Tpo .deps/urbackupclientbackend-Server.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Table.o -MD -MP -MF .deps/urbackupclientbackend-Table.Tpo -c -o urbackupclientbackend-Table.o `test -f 'Table.cpp' || echo './'`Table.cpp
+mv -f .deps/urbackupclientbackend-LookupService.Tpo .deps/urbackupclientbackend-LookupService.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-OutputStream.o -MD -MP -MF .deps/urbackupclientbackend-OutputStream.Tpo -c -o urbackupclientbackend-OutputStream.o `test -f 'OutputStream.cpp' || echo './'`OutputStream.cpp
+mv -f .deps/urbackupclientbackend-stringtools.Tpo .deps/urbackupclientbackend-stringtools.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-ThreadPool.o -MD -MP -MF .deps/urbackupclientbackend-ThreadPool.Tpo -c -o urbackupclientbackend-ThreadPool.o `test -f 'ThreadPool.cpp' || echo './'`ThreadPool.cpp
+mv -f .deps/urbackupclientbackend-OutputStream.Tpo .deps/urbackupclientbackend-OutputStream.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-MemoryPipe.o -MD -MP -MF .deps/urbackupclientbackend-MemoryPipe.Tpo -c -o urbackupclientbackend-MemoryPipe.o `test -f 'MemoryPipe.cpp' || echo './'`MemoryPipe.cpp
+mv -f .deps/urbackupclientbackend-SettingsReader.Tpo .deps/urbackupclientbackend-SettingsReader.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-Condition_lin.o -MD -MP -MF .deps/urbackupclientbackend-Condition_lin.Tpo -c -o urbackupclientbackend-Condition_lin.o `test -f 'Condition_lin.cpp' || echo './'`Condition_lin.cpp
+mv -f .deps/urbackupclientbackend-Table.Tpo .deps/urbackupclientbackend-Table.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-MemorySettingsReader.o -MD -MP -MF .deps/urbackupclientbackend-MemorySettingsReader.Tpo -c -o urbackupclientbackend-MemorySettingsReader.o `test -f 'MemorySettingsReader.cpp' || echo './'`MemorySettingsReader.cpp
+mv -f .deps/urbackupclientbackend-FileSettingsReader.Tpo .deps/urbackupclientbackend-FileSettingsReader.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-SQLiteFactory.o -MD -MP -MF .deps/urbackupclientbackend-SQLiteFactory.Tpo -c -o urbackupclientbackend-SQLiteFactory.o `test -f 'SQLiteFactory.cpp' || echo './'`SQLiteFactory.cpp
+mv -f .deps/urbackupclientbackend-Condition_lin.Tpo .deps/urbackupclientbackend-Condition_lin.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-PipeThrottler.o -MD -MP -MF .deps/urbackupclientbackend-PipeThrottler.Tpo -c -o urbackupclientbackend-PipeThrottler.o `test -f 'PipeThrottler.cpp' || echo './'`PipeThrottler.cpp
+mv -f .deps/urbackupclientbackend-SQLiteFactory.Tpo .deps/urbackupclientbackend-SQLiteFactory.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-mt19937ar.o -MD -MP -MF .deps/urbackupclientbackend-mt19937ar.Tpo -c -o urbackupclientbackend-mt19937ar.o `test -f 'mt19937ar.cpp' || echo './'`mt19937ar.cpp
+mv -f .deps/urbackupclientbackend-MemoryPipe.Tpo .deps/urbackupclientbackend-MemoryPipe.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-DatabaseCursor.o -MD -MP -MF .deps/urbackupclientbackend-DatabaseCursor.Tpo -c -o urbackupclientbackend-DatabaseCursor.o `test -f 'DatabaseCursor.cpp' || echo './'`DatabaseCursor.cpp
+mv -f .deps/urbackupclientbackend-mt19937ar.Tpo .deps/urbackupclientbackend-mt19937ar.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-SharedMutex_lin.o -MD -MP -MF .deps/urbackupclientbackend-SharedMutex_lin.Tpo -c -o urbackupclientbackend-SharedMutex_lin.o `test -f 'SharedMutex_lin.cpp' || echo './'`SharedMutex_lin.cpp
+mv -f .deps/urbackupclientbackend-MemorySettingsReader.Tpo .deps/urbackupclientbackend-MemorySettingsReader.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclientbackend-StaticPluginRegistration.o -MD -MP -MF .deps/urbackupclientbackend-StaticPluginRegistration.Tpo -c -o urbackupclientbackend-StaticPluginRegistration.o `test -f 'StaticPluginRegistration.cpp' || echo './'`StaticPluginRegistration.cpp
+mv -f .deps/urbackupclientbackend-DatabaseCursor.Tpo .deps/urbackupclientbackend-DatabaseCursor.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-os_functions_lin.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-os_functions_lin.Tpo -c -o urbackupcommon/urbackupclientbackend-os_functions_lin.o `test -f 'urbackupcommon/os_functions_lin.cpp' || echo './'`urbackupcommon/os_functions_lin.cpp
+mv -f .deps/urbackupclientbackend-StaticPluginRegistration.Tpo .deps/urbackupclientbackend-StaticPluginRegistration.Po
+mv -f .deps/urbackupclientbackend-ThreadPool.Tpo .deps/urbackupclientbackend-ThreadPool.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-escape.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-escape.Tpo -c -o urbackupcommon/urbackupclientbackend-escape.o `test -f 'urbackupcommon/escape.cpp' || echo './'`urbackupcommon/escape.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-bufmgr.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-bufmgr.Tpo -c -o urbackupcommon/urbackupclientbackend-bufmgr.o `test -f 'urbackupcommon/bufmgr.cpp' || echo './'`urbackupcommon/bufmgr.cpp
+mv -f .deps/urbackupclientbackend-PipeThrottler.Tpo .deps/urbackupclientbackend-PipeThrottler.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-json.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-json.Tpo -c -o urbackupcommon/urbackupclientbackend-json.o `test -f 'urbackupcommon/json.cpp' || echo './'`urbackupcommon/json.cpp
+mv -f .deps/urbackupclientbackend-SharedMutex_lin.Tpo .deps/urbackupclientbackend-SharedMutex_lin.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-CompressedPipe.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-CompressedPipe.Tpo -c -o urbackupcommon/urbackupclientbackend-CompressedPipe.o `test -f 'urbackupcommon/CompressedPipe.cpp' || echo './'`urbackupcommon/CompressedPipe.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-escape.Tpo urbackupcommon/.deps/urbackupclientbackend-escape.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-InternetServicePipe2.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe2.Tpo -c -o urbackupcommon/urbackupclientbackend-InternetServicePipe2.o `test -f 'urbackupcommon/InternetServicePipe2.cpp' || echo './'`urbackupcommon/InternetServicePipe2.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-bufmgr.Tpo urbackupcommon/.deps/urbackupclientbackend-bufmgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-settingslist.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-settingslist.Tpo -c -o urbackupcommon/urbackupclientbackend-settingslist.o `test -f 'urbackupcommon/settingslist.cpp' || echo './'`urbackupcommon/settingslist.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe2.Tpo urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe2.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/fileclient/urbackupclientbackend-FileClientChunked.o -MD -MP -MF urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClientChunked.Tpo -c -o urbackupcommon/fileclient/urbackupclientbackend-FileClientChunked.o `test -f 'urbackupcommon/fileclient/FileClientChunked.cpp' || echo './'`urbackupcommon/fileclient/FileClientChunked.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-CompressedPipe.Tpo urbackupcommon/.deps/urbackupclientbackend-CompressedPipe.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-InternetServicePipe.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe.Tpo -c -o urbackupcommon/urbackupclientbackend-InternetServicePipe.o `test -f 'urbackupcommon/InternetServicePipe.cpp' || echo './'`urbackupcommon/InternetServicePipe.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-json.Tpo urbackupcommon/.deps/urbackupclientbackend-json.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-filelist_utils.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-filelist_utils.Tpo -c -o urbackupcommon/urbackupclientbackend-filelist_utils.o `test -f 'urbackupcommon/filelist_utils.cpp' || echo './'`urbackupcommon/filelist_utils.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe.Tpo urbackupcommon/.deps/urbackupclientbackend-InternetServicePipe.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-file_metadata.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-file_metadata.Tpo -c -o urbackupcommon/urbackupclientbackend-file_metadata.o `test -f 'urbackupcommon/file_metadata.cpp' || echo './'`urbackupcommon/file_metadata.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-filelist_utils.Tpo urbackupcommon/.deps/urbackupclientbackend-filelist_utils.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-glob.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-glob.Tpo -c -o urbackupcommon/urbackupclientbackend-glob.o `test -f 'urbackupcommon/glob.cpp' || echo './'`urbackupcommon/glob.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-glob.Tpo urbackupcommon/.deps/urbackupclientbackend-glob.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-chunk_hasher.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-chunk_hasher.Tpo -c -o urbackupcommon/urbackupclientbackend-chunk_hasher.o `test -f 'urbackupcommon/chunk_hasher.cpp' || echo './'`urbackupcommon/chunk_hasher.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-settingslist.Tpo urbackupcommon/.deps/urbackupclientbackend-settingslist.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-CompressedPipe2.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-CompressedPipe2.Tpo -c -o urbackupcommon/urbackupclientbackend-CompressedPipe2.o `test -f 'urbackupcommon/CompressedPipe2.cpp' || echo './'`urbackupcommon/CompressedPipe2.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-os_functions_lin.Tpo urbackupcommon/.deps/urbackupclientbackend-os_functions_lin.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-SparseFile.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-SparseFile.Tpo -c -o urbackupcommon/urbackupclientbackend-SparseFile.o `test -f 'urbackupcommon/SparseFile.cpp' || echo './'`urbackupcommon/SparseFile.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-CompressedPipe2.Tpo urbackupcommon/.deps/urbackupclientbackend-CompressedPipe2.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-ExtentIterator.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-ExtentIterator.Tpo -c -o urbackupcommon/urbackupclientbackend-ExtentIterator.o `test -f 'urbackupcommon/ExtentIterator.cpp' || echo './'`urbackupcommon/ExtentIterator.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-file_metadata.Tpo urbackupcommon/.deps/urbackupclientbackend-file_metadata.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-TreeHash.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-TreeHash.Tpo -c -o urbackupcommon/urbackupclientbackend-TreeHash.o `test -f 'urbackupcommon/TreeHash.cpp' || echo './'`urbackupcommon/TreeHash.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-ExtentIterator.Tpo urbackupcommon/.deps/urbackupclientbackend-ExtentIterator.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientbackend-WalCheckpointThread.o -MD -MP -MF urbackupcommon/.deps/urbackupclientbackend-WalCheckpointThread.Tpo -c -o urbackupcommon/urbackupclientbackend-WalCheckpointThread.o `test -f 'urbackupcommon/WalCheckpointThread.cpp' || echo './'`urbackupcommon/WalCheckpointThread.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-SparseFile.Tpo urbackupcommon/.deps/urbackupclientbackend-SparseFile.Po
+mv -f urbackupcommon/.deps/urbackupclientbackend-chunk_hasher.Tpo urbackupcommon/.deps/urbackupclientbackend-chunk_hasher.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-CompressedFile.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-CompressedFile.Tpo -c -o fsimageplugin/urbackupclientbackend-CompressedFile.o `test -f 'fsimageplugin/CompressedFile.cpp' || echo './'`fsimageplugin/CompressedFile.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-LRUMemCache.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-LRUMemCache.Tpo -c -o fsimageplugin/urbackupclientbackend-LRUMemCache.o `test -f 'fsimageplugin/LRUMemCache.cpp' || echo './'`fsimageplugin/LRUMemCache.cpp
+mv -f urbackupcommon/.deps/urbackupclientbackend-TreeHash.Tpo urbackupcommon/.deps/urbackupclientbackend-TreeHash.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-cowfile.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-cowfile.Tpo -c -o fsimageplugin/urbackupclientbackend-cowfile.o `test -f 'fsimageplugin/cowfile.cpp' || echo './'`fsimageplugin/cowfile.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-LRUMemCache.Tpo fsimageplugin/.deps/urbackupclientbackend-LRUMemCache.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-FileWrapper.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-FileWrapper.Tpo -c -o fsimageplugin/urbackupclientbackend-FileWrapper.o `test -f 'fsimageplugin/FileWrapper.cpp' || echo './'`fsimageplugin/FileWrapper.cpp
+In file included from fsimageplugin/fs/ntfs.h:2:0,
+                 from fsimageplugin/cowfile.cpp:30:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+mv -f fsimageplugin/.deps/urbackupclientbackend-FileWrapper.Tpo fsimageplugin/.deps/urbackupclientbackend-FileWrapper.Po
+mv -f urbackupcommon/.deps/urbackupclientbackend-WalCheckpointThread.Tpo urbackupcommon/.deps/urbackupclientbackend-WalCheckpointThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-ClientBitmap.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-ClientBitmap.Tpo -c -o fsimageplugin/urbackupclientbackend-ClientBitmap.o `test -f 'fsimageplugin/ClientBitmap.cpp' || echo './'`fsimageplugin/ClientBitmap.cpp
+gcc -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -DSQLITE_ENABLE_UNLOCK_NOTIFY  -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT common/urbackupclientbackend-miniz.o -MD -MP -MF common/.deps/urbackupclientbackend-miniz.Tpo -c -o common/urbackupclientbackend-miniz.o `test -f 'common/miniz.c' || echo './'`common/miniz.c
+common/miniz.c:3001:9: note: #pragma message: Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files.
+ #pragma message("Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files.")
+         ^
+mv -f fsimageplugin/.deps/urbackupclientbackend-cowfile.Tpo fsimageplugin/.deps/urbackupclientbackend-cowfile.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-cmdline_preprocessor.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-cmdline_preprocessor.Tpo -c -o urbackupclient/urbackupclientbackend-cmdline_preprocessor.o `test -f 'urbackupclient/cmdline_preprocessor.cpp' || echo './'`urbackupclient/cmdline_preprocessor.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-CompressedFile.Tpo fsimageplugin/.deps/urbackupclientbackend-CompressedFile.Po
+mv -f fsimageplugin/.deps/urbackupclientbackend-ClientBitmap.Tpo fsimageplugin/.deps/urbackupclientbackend-ClientBitmap.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT clientctl/urbackupclientctl-main.o -MD -MP -MF clientctl/.deps/urbackupclientctl-main.Tpo -c -o clientctl/urbackupclientctl-main.o `test -f 'clientctl/main.cpp' || echo './'`clientctl/main.cpp
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientctl-os_functions_lin.o -MD -MP -MF urbackupcommon/.deps/urbackupclientctl-os_functions_lin.Tpo -c -o urbackupcommon/urbackupclientctl-os_functions_lin.o `test -f 'urbackupcommon/os_functions_lin.cpp' || echo './'`urbackupcommon/os_functions_lin.cpp
+mv -f urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClientChunked.Tpo urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClientChunked.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT clientctl/urbackupclientctl-Connector.o -MD -MP -MF clientctl/.deps/urbackupclientctl-Connector.Tpo -c -o clientctl/urbackupclientctl-Connector.o `test -f 'clientctl/Connector.cpp' || echo './'`clientctl/Connector.cpp
+mv -f common/.deps/urbackupclientbackend-miniz.Tpo common/.deps/urbackupclientbackend-miniz.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT clientctl/urbackupclientctl-tcpstack.o -MD -MP -MF clientctl/.deps/urbackupclientctl-tcpstack.Tpo -c -o clientctl/urbackupclientctl-tcpstack.o `test -f 'clientctl/tcpstack.cpp' || echo './'`clientctl/tcpstack.cpp
+mv -f clientctl/.deps/urbackupclientctl-tcpstack.Tpo clientctl/.deps/urbackupclientctl-tcpstack.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/urbackupclientctl-escape.o -MD -MP -MF urbackupcommon/.deps/urbackupclientctl-escape.Tpo -c -o urbackupcommon/urbackupclientctl-escape.o `test -f 'urbackupcommon/escape.cpp' || echo './'`urbackupcommon/escape.cpp
+mv -f urbackupcommon/.deps/urbackupclientctl-os_functions_lin.Tpo urbackupcommon/.deps/urbackupclientctl-os_functions_lin.Po
+mv -f urbackupcommon/.deps/urbackupclientctl-escape.Tpo urbackupcommon/.deps/urbackupclientctl-escape.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include -I/usr/include -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT clientctl/urbackupclientctl-jsoncpp.o -MD -MP -MF clientctl/.deps/urbackupclientctl-jsoncpp.Tpo -c -o clientctl/urbackupclientctl-jsoncpp.o `test -f 'clientctl/jsoncpp.cpp' || echo './'`clientctl/jsoncpp.cpp
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT libfastcgi/urbackupclientbackend-fastcgi.o -MD -MP -MF libfastcgi/.deps/urbackupclientbackend-fastcgi.Tpo -c -o libfastcgi/urbackupclientbackend-fastcgi.o `test -f 'libfastcgi/fastcgi.cpp' || echo './'`libfastcgi/fastcgi.cpp
+mv -f clientctl/.deps/urbackupclientctl-Connector.Tpo clientctl/.deps/urbackupclientctl-Connector.Po
+gcc -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -DSQLITE_ENABLE_UNLOCK_NOTIFY  -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT sqlite/urbackupclientbackend-sqlite3.o -MD -MP -MF sqlite/.deps/urbackupclientbackend-sqlite3.Tpo -c -o sqlite/urbackupclientbackend-sqlite3.o `test -f 'sqlite/sqlite3.c' || echo './'`sqlite/sqlite3.c
+mv -f urbackupclient/.deps/urbackupclientbackend-cmdline_preprocessor.Tpo urbackupclient/.deps/urbackupclientbackend-cmdline_preprocessor.Po
+gcc -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -DSQLITE_ENABLE_UNLOCK_NOTIFY  -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT sqlite/urbackupclientbackend-shell.o -MD -MP -MF sqlite/.deps/urbackupclientbackend-shell.Tpo -c -o sqlite/urbackupclientbackend-shell.o `test -f 'sqlite/shell.c' || echo './'`sqlite/shell.c
+mv -f libfastcgi/.deps/urbackupclientbackend-fastcgi.Tpo libfastcgi/.deps/urbackupclientbackend-fastcgi.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT common/urbackupclientbackend-data.o -MD -MP -MF common/.deps/urbackupclientbackend-data.Tpo -c -o common/urbackupclientbackend-data.o `test -f 'common/data.cpp' || echo './'`common/data.cpp
+mv -f common/.deps/urbackupclientbackend-data.Tpo common/.deps/urbackupclientbackend-data.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT common/urbackupclientbackend-adler32.o -MD -MP -MF common/.deps/urbackupclientbackend-adler32.Tpo -c -o common/urbackupclientbackend-adler32.o `test -f 'common/adler32.cpp' || echo './'`common/adler32.cpp
+mv -f common/.deps/urbackupclientbackend-adler32.Tpo common/.deps/urbackupclientbackend-adler32.Po
+gcc -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -DSQLITE_ENABLE_UNLOCK_NOTIFY  -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/sha2/urbackupclientbackend-sha2.o -MD -MP -MF urbackupcommon/sha2/.deps/urbackupclientbackend-sha2.Tpo -c -o urbackupcommon/sha2/urbackupclientbackend-sha2.o `test -f 'urbackupcommon/sha2/sha2.c' || echo './'`urbackupcommon/sha2/sha2.c
+mv -f urbackupcommon/sha2/.deps/urbackupclientbackend-sha2.Tpo urbackupcommon/sha2/.deps/urbackupclientbackend-sha2.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/fileclient/urbackupclientbackend-FileClient.o -MD -MP -MF urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClient.Tpo -c -o urbackupcommon/fileclient/urbackupclientbackend-FileClient.o `test -f 'urbackupcommon/fileclient/FileClient.cpp' || echo './'`urbackupcommon/fileclient/FileClient.cpp
+mv -f clientctl/.deps/urbackupclientctl-main.Tpo clientctl/.deps/urbackupclientctl-main.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupcommon/fileclient/urbackupclientbackend-tcpstack.o -MD -MP -MF urbackupcommon/fileclient/.deps/urbackupclientbackend-tcpstack.Tpo -c -o urbackupcommon/fileclient/urbackupclientbackend-tcpstack.o `test -f 'urbackupcommon/fileclient/tcpstack.cpp' || echo './'`urbackupcommon/fileclient/tcpstack.cpp
+mv -f sqlite/.deps/urbackupclientbackend-shell.Tpo sqlite/.deps/urbackupclientbackend-shell.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-dllmain.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-dllmain.Tpo -c -o cryptoplugin/urbackupclientbackend-dllmain.o `test -f 'cryptoplugin/dllmain.cpp' || echo './'`cryptoplugin/dllmain.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-dllmain.Tpo cryptoplugin/.deps/urbackupclientbackend-dllmain.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-AESDecryption.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-AESDecryption.Tpo -c -o cryptoplugin/urbackupclientbackend-AESDecryption.o `test -f 'cryptoplugin/AESDecryption.cpp' || echo './'`cryptoplugin/AESDecryption.cpp
+mv -f urbackupcommon/fileclient/.deps/urbackupclientbackend-tcpstack.Tpo urbackupcommon/fileclient/.deps/urbackupclientbackend-tcpstack.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-CryptoFactory.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-CryptoFactory.Tpo -c -o cryptoplugin/urbackupclientbackend-CryptoFactory.o `test -f 'cryptoplugin/CryptoFactory.cpp' || echo './'`cryptoplugin/CryptoFactory.cpp
+mv -f clientctl/.deps/urbackupclientctl-jsoncpp.Tpo clientctl/.deps/urbackupclientctl-jsoncpp.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-pluginmgr.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-pluginmgr.Tpo -c -o cryptoplugin/urbackupclientbackend-pluginmgr.o `test -f 'cryptoplugin/pluginmgr.cpp' || echo './'`cryptoplugin/pluginmgr.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-pluginmgr.Tpo cryptoplugin/.deps/urbackupclientbackend-pluginmgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-AESEncryption.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-AESEncryption.Tpo -c -o cryptoplugin/urbackupclientbackend-AESEncryption.o `test -f 'cryptoplugin/AESEncryption.cpp' || echo './'`cryptoplugin/AESEncryption.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-AESDecryption.Tpo cryptoplugin/.deps/urbackupclientbackend-AESDecryption.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-ZlibCompression.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-ZlibCompression.Tpo -c -o cryptoplugin/urbackupclientbackend-ZlibCompression.o `test -f 'cryptoplugin/ZlibCompression.cpp' || echo './'`cryptoplugin/ZlibCompression.cpp
+mv -f urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClient.Tpo urbackupcommon/fileclient/.deps/urbackupclientbackend-FileClient.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-ZlibDecompression.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-ZlibDecompression.Tpo -c -o cryptoplugin/urbackupclientbackend-ZlibDecompression.o `test -f 'cryptoplugin/ZlibDecompression.cpp' || echo './'`cryptoplugin/ZlibDecompression.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-ZlibCompression.Tpo cryptoplugin/.deps/urbackupclientbackend-ZlibCompression.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-AESGCMDecryption.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-AESGCMDecryption.Tpo -c -o cryptoplugin/urbackupclientbackend-AESGCMDecryption.o `test -f 'cryptoplugin/AESGCMDecryption.cpp' || echo './'`cryptoplugin/AESGCMDecryption.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-AESEncryption.Tpo cryptoplugin/.deps/urbackupclientbackend-AESEncryption.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-AESGCMEncryption.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-AESGCMEncryption.Tpo -c -o cryptoplugin/urbackupclientbackend-AESGCMEncryption.o `test -f 'cryptoplugin/AESGCMEncryption.cpp' || echo './'`cryptoplugin/AESGCMEncryption.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-ZlibDecompression.Tpo cryptoplugin/.deps/urbackupclientbackend-ZlibDecompression.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT cryptoplugin/urbackupclientbackend-ECDHKeyExchange.o -MD -MP -MF cryptoplugin/.deps/urbackupclientbackend-ECDHKeyExchange.Tpo -c -o cryptoplugin/urbackupclientbackend-ECDHKeyExchange.o `test -f 'cryptoplugin/ECDHKeyExchange.cpp' || echo './'`cryptoplugin/ECDHKeyExchange.cpp
+mv -f cryptoplugin/.deps/urbackupclientbackend-CryptoFactory.Tpo cryptoplugin/.deps/urbackupclientbackend-CryptoFactory.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-dllmain.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-dllmain.Tpo -c -o fsimageplugin/urbackupclientbackend-dllmain.o `test -f 'fsimageplugin/dllmain.cpp' || echo './'`fsimageplugin/dllmain.cpp
+In file included from fsimageplugin/fs/ntfs.h:2:0,
+                 from fsimageplugin/dllmain.cpp:60:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+mv -f cryptoplugin/.deps/urbackupclientbackend-AESGCMDecryption.Tpo cryptoplugin/.deps/urbackupclientbackend-AESGCMDecryption.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-filesystem.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-filesystem.Tpo -c -o fsimageplugin/urbackupclientbackend-filesystem.o `test -f 'fsimageplugin/filesystem.cpp' || echo './'`fsimageplugin/filesystem.cpp
+In file included from fsimageplugin/filesystem.cpp:19:0:
+fsimageplugin/filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+mv -f cryptoplugin/.deps/urbackupclientbackend-AESGCMEncryption.Tpo cryptoplugin/.deps/urbackupclientbackend-AESGCMEncryption.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-FSImageFactory.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-FSImageFactory.Tpo -c -o fsimageplugin/urbackupclientbackend-FSImageFactory.o `test -f 'fsimageplugin/FSImageFactory.cpp' || echo './'`fsimageplugin/FSImageFactory.cpp
+In file included from fsimageplugin/fs/ntfs.h:2:0,
+                 from fsimageplugin/FSImageFactory.cpp:23:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+mv -f cryptoplugin/.deps/urbackupclientbackend-ECDHKeyExchange.Tpo cryptoplugin/.deps/urbackupclientbackend-ECDHKeyExchange.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-pluginmgr.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-pluginmgr.Tpo -c -o fsimageplugin/urbackupclientbackend-pluginmgr.o `test -f 'fsimageplugin/pluginmgr.cpp' || echo './'`fsimageplugin/pluginmgr.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-FSImageFactory.Tpo fsimageplugin/.deps/urbackupclientbackend-FSImageFactory.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/urbackupclientbackend-vhdfile.o -MD -MP -MF fsimageplugin/.deps/urbackupclientbackend-vhdfile.Tpo -c -o fsimageplugin/urbackupclientbackend-vhdfile.o `test -f 'fsimageplugin/vhdfile.cpp' || echo './'`fsimageplugin/vhdfile.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-pluginmgr.Tpo fsimageplugin/.deps/urbackupclientbackend-pluginmgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/fs/urbackupclientbackend-ntfs.o -MD -MP -MF fsimageplugin/fs/.deps/urbackupclientbackend-ntfs.Tpo -c -o fsimageplugin/fs/urbackupclientbackend-ntfs.o `test -f 'fsimageplugin/fs/ntfs.cpp' || echo './'`fsimageplugin/fs/ntfs.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-filesystem.Tpo fsimageplugin/.deps/urbackupclientbackend-filesystem.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fsimageplugin/fs/urbackupclientbackend-unknown.o -MD -MP -MF fsimageplugin/fs/.deps/urbackupclientbackend-unknown.Tpo -c -o fsimageplugin/fs/urbackupclientbackend-unknown.o `test -f 'fsimageplugin/fs/unknown.cpp' || echo './'`fsimageplugin/fs/unknown.cpp
+In file included from fsimageplugin/fs/ntfs.h:2:0,
+                 from fsimageplugin/vhdfile.cpp:35:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+In file included from fsimageplugin/fs/ntfs.h:2:0,
+                 from fsimageplugin/fs/ntfs.cpp:21:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+In file included from fsimageplugin/fs/unknown.h:2:0,
+                 from fsimageplugin/fs/unknown.cpp:19:
+fsimageplugin/fs/../filesystem.h:46:7: warning: ‘Filesystem’ has a field ‘Filesystem::readahead_thread’ whose type uses the anonymous namespace
+ class Filesystem : public IFilesystem, public IFsNextBlockCallback
+       ^
+mv -f fsimageplugin/fs/.deps/urbackupclientbackend-unknown.Tpo fsimageplugin/fs/.deps/urbackupclientbackend-unknown.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-dllmain.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-dllmain.Tpo -c -o urbackupclient/urbackupclientbackend-dllmain.o `test -f 'urbackupclient/dllmain.cpp' || echo './'`urbackupclient/dllmain.cpp
+mv -f fsimageplugin/fs/.deps/urbackupclientbackend-ntfs.Tpo fsimageplugin/fs/.deps/urbackupclientbackend-ntfs.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-clientdao.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-clientdao.Tpo -c -o urbackupclient/urbackupclientbackend-clientdao.o `test -f 'urbackupclient/clientdao.cpp' || echo './'`urbackupclient/clientdao.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-vhdfile.Tpo fsimageplugin/.deps/urbackupclientbackend-vhdfile.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-client.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-client.Tpo -c -o urbackupclient/urbackupclientbackend-client.o `test -f 'urbackupclient/client.cpp' || echo './'`urbackupclient/client.cpp
+mv -f fsimageplugin/.deps/urbackupclientbackend-dllmain.Tpo fsimageplugin/.deps/urbackupclientbackend-dllmain.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-ClientService.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-ClientService.Tpo -c -o urbackupclient/urbackupclientbackend-ClientService.o `test -f 'urbackupclient/ClientService.cpp' || echo './'`urbackupclient/ClientService.cpp
+In file included from urbackupclient/ClientService.cpp:58:0:
+urbackupclient/../config.h:162:0: warning: "VERSION" redefined
+ #define VERSION "2.1.7.0"
+ ^
+In file included from urbackupclient/RestoreFiles.h:5:0,
+                 from urbackupclient/ClientService.cpp:20:
+urbackupclient/../urbackupcommon/fileclient/FileClient.h:20:0: note: this is the location of the previous definition
+ #define VERSION 36
+ ^
+In file included from urbackupclient/ClientService.cpp:20:0:
+urbackupclient/RestoreFiles.h:26:7: warning: ‘RestoreFiles’ has a field ‘RestoreFiles::curr_restore_updater’ whose type uses the anonymous namespace
+ class RestoreFiles : public IThread, public FileClient::ReconnectionCallback, public FileClientChunked::ReconnectionCallback, FileClient::ProgressLogCallback
+       ^
+urbackupclient/ClientService.cpp: In member function ‘virtual void {anonymous}::UpdateSilentThread::operator()()’:
+urbackupclient/ClientService.cpp:141:58: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+    system("/bin/sh urbackup/UrBackupUpdate.sh -- silent");
+                                                          ^
+mv -f urbackupclient/.deps/urbackupclientbackend-clientdao.Tpo urbackupclient/.deps/urbackupclientbackend-clientdao.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-ClientSend.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-ClientSend.Tpo -c -o urbackupclient/urbackupclientbackend-ClientSend.o `test -f 'urbackupclient/ClientSend.cpp' || echo './'`urbackupclient/ClientSend.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-dllmain.Tpo urbackupclient/.deps/urbackupclientbackend-dllmain.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-client_restore.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-client_restore.Tpo -c -o urbackupclient/urbackupclientbackend-client_restore.o `test -f 'urbackupclient/client_restore.cpp' || echo './'`urbackupclient/client_restore.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-ClientSend.Tpo urbackupclient/.deps/urbackupclientbackend-ClientSend.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-ServerIdentityMgr.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-ServerIdentityMgr.Tpo -c -o urbackupclient/urbackupclientbackend-ServerIdentityMgr.o `test -f 'urbackupclient/ServerIdentityMgr.cpp' || echo './'`urbackupclient/ServerIdentityMgr.cpp
+urbackupclient/client_restore.cpp: In function ‘void ping_named_server()’:
+urbackupclient/client_restore.cpp:1306:74: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+   system(("./urbackuprestoreclient --ping-server \""+out+"\" &").c_str());
+                                                                          ^
+urbackupclient/client_restore.cpp: In function ‘bool do_login()’:
+urbackupclient/client_restore.cpp:1312:17: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  system("clear");
+                 ^
+urbackupclient/client_restore.cpp:1313:48: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  system("cat urbackup/restore/trying_to_login");
+                                                ^
+urbackupclient/client_restore.cpp: In function ‘void restore_wizard()’:
+urbackupclient/client_restore.cpp:1412:71: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("dialog --msgbox \"`cat urbackup/restore/welcome`\" 10 70");
+                                                                       ^
+urbackupclient/client_restore.cpp:1419:21: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("clear");
+                     ^
+urbackupclient/client_restore.cpp:1420:51: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/search_network");
+                                                   ^
+urbackupclient/client_restore.cpp:1447:45: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+        system(configure_networkcard.c_str());
+                                             ^
+urbackupclient/client_restore.cpp:1452:38: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+        system(configure_wlan.c_str());
+                                      ^
+urbackupclient/client_restore.cpp:1457:22: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+        system("bash");
+                      ^
+urbackupclient/client_restore.cpp:1477:157: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("urbackup/restore/progress-start.sh | dialog --backtitle \"`cat urbackup/restore/search`\" --gauge \"`cat urbackup/restore/t_progress`\" 6 60 0");
+                                                                                                                                                             ^
+urbackupclient/client_restore.cpp:1531:44: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+       system(configure_networkcard.c_str());
+                                            ^
+urbackupclient/client_restore.cpp:1536:37: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+       system(configure_wlan.c_str());
+                                     ^
+urbackupclient/client_restore.cpp:1546:21: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+       system("bash");
+                     ^
+urbackupclient/client_restore.cpp:1698:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("clear");
+                    ^
+urbackupclient/client_restore.cpp:1699:47: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("cat urbackup/restore/loading_mbr");
+                                               ^
+urbackupclient/client_restore.cpp:1700:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("echo");
+                   ^
+urbackupclient/client_restore.cpp:1705:28: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("touch mbr.dat");
+                            ^
+urbackupclient/client_restore.cpp:1714:47: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("cat urbackup/restore/reading_mbr");
+                                               ^
+urbackupclient/client_restore.cpp:1715:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("echo");
+                   ^
+urbackupclient/client_restore.cpp:1737:47: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("cat urbackup/restore/writing_mbr");
+                                               ^
+urbackupclient/client_restore.cpp:1738:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("echo");
+                   ^
+urbackupclient/client_restore.cpp:1776:55: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/writing_gpt_header");
+                                                       ^
+urbackupclient/client_restore.cpp:1777:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("echo");
+                    ^
+urbackupclient/client_restore.cpp:1786:54: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/writing_gpt_table");
+                                                      ^
+urbackupclient/client_restore.cpp:1787:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("echo");
+                    ^
+urbackupclient/client_restore.cpp:1796:62: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/writing_backup_gpt_header");
+                                                              ^
+urbackupclient/client_restore.cpp:1797:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("echo");
+                    ^
+urbackupclient/client_restore.cpp:1806:61: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/writing_backup_gpt_table");
+                                                             ^
+urbackupclient/client_restore.cpp:1807:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("echo");
+                    ^
+urbackupclient/client_restore.cpp:1819:59: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("cat urbackup/restore/reading_partition_table");
+                                                           ^
+urbackupclient/client_restore.cpp:1820:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("echo");
+                   ^
+urbackupclient/client_restore.cpp:1822:64: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system(("partprobe "+seldrive+" > /dev/null 2>&1").c_str());
+                                                                ^
+urbackupclient/client_restore.cpp:1824:53: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("cat urbackup/restore/testing_partition");
+                                                     ^
+urbackupclient/client_restore.cpp:1825:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("echo");
+                   ^
+urbackupclient/client_restore.cpp:1835:65: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system(("partprobe "+seldrive+" > /dev/null 2>&1").c_str());
+                                                                 ^
+urbackupclient/client_restore.cpp:1837:54: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("cat urbackup/restore/testing_partition");
+                                                      ^
+urbackupclient/client_restore.cpp:1838:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("echo");
+                    ^
+urbackupclient/client_restore.cpp:1849:71: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+       system(("echo w | fdisk "+seldrive+" > /dev/null 2>&1").c_str());
+                                                                       ^
+urbackupclient/client_restore.cpp:1875:230: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system(("./urbackuprestoreclient --image-download-progress | dialog --backtitle \"`cat urbackup/restore/restoration"+(std::string)(res_sysvol?"_sysvol":"")+"`\" --gauge \"`cat urbackup/restore/t_progress`\" 6 60 0").c_str());
+                                                                                                                                                                                                                                      ^
+urbackupclient/client_restore.cpp:1916:21: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+       system("bash");
+                     ^
+urbackupclient/client_restore.cpp:1948:22: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("init 6");
+                      ^
+urbackupclient/client_restore.cpp:1952:20: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("bash");
+                    ^
+urbackupclient/client_restore.cpp:1954:67: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system(("python3 driver_edit.py "+windows_partition).c_str());
+                                                                   ^
+urbackupclient/client_restore.cpp:1956:22: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+      system("init 6");
+                      ^
+urbackupclient/client_restore.cpp:1961:76: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("dialog --msgbox \"`cat urbackup/restore/computer_halt`\" 7 50");
+                                                                            ^
+urbackupclient/client_restore.cpp:1962:21: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("init 0");
+                     ^
+urbackupclient/client_restore.cpp:1982:81: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("dialog --msgbox \"`cat urbackup/restore/internal_error`!!!!\" 7 50");
+                                                                                 ^
+mv -f urbackupclient/.deps/urbackupclientbackend-ServerIdentityMgr.Tpo urbackupclient/.deps/urbackupclientbackend-ServerIdentityMgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-ClientServiceCMD.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-ClientServiceCMD.Tpo -c -o urbackupclient/urbackupclientbackend-ClientServiceCMD.o `test -f 'urbackupclient/ClientServiceCMD.cpp' || echo './'`urbackupclient/ClientServiceCMD.cpp
+In file included from urbackupclient/ClientServiceCMD.cpp:19:0:
+urbackupclient/RestoreFiles.h:26:7: warning: ‘RestoreFiles’ has a field ‘RestoreFiles::curr_restore_updater’ whose type uses the anonymous namespace
+ class RestoreFiles : public IThread, public FileClient::ReconnectionCallback, public FileClientChunked::ReconnectionCallback, FileClient::ProgressLogCallback
+       ^
+mv -f urbackupclient/.deps/urbackupclientbackend-client_restore.Tpo urbackupclient/.deps/urbackupclientbackend-client_restore.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-ImageThread.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-ImageThread.Tpo -c -o urbackupclient/urbackupclientbackend-ImageThread.o `test -f 'urbackupclient/ImageThread.cpp' || echo './'`urbackupclient/ImageThread.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-ClientService.Tpo urbackupclient/.deps/urbackupclientbackend-ClientService.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-InternetClient.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-InternetClient.Tpo -c -o urbackupclient/urbackupclientbackend-InternetClient.o `test -f 'urbackupclient/InternetClient.cpp' || echo './'`urbackupclient/InternetClient.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-ClientServiceCMD.Tpo urbackupclient/.deps/urbackupclientbackend-ClientServiceCMD.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-file_permissions.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-file_permissions.Tpo -c -o urbackupclient/urbackupclientbackend-file_permissions.o `test -f 'urbackupclient/file_permissions.cpp' || echo './'`urbackupclient/file_permissions.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-InternetClient.Tpo urbackupclient/.deps/urbackupclientbackend-InternetClient.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-lin_ver.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-lin_ver.Tpo -c -o urbackupclient/urbackupclientbackend-lin_ver.o `test -f 'urbackupclient/lin_ver.cpp' || echo './'`urbackupclient/lin_ver.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-file_permissions.Tpo urbackupclient/.deps/urbackupclientbackend-file_permissions.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-lin_tokens.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-lin_tokens.Tpo -c -o urbackupclient/urbackupclientbackend-lin_tokens.o `test -f 'urbackupclient/lin_tokens.cpp' || echo './'`urbackupclient/lin_tokens.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-ImageThread.Tpo urbackupclient/.deps/urbackupclientbackend-ImageThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-common_tokens.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-common_tokens.Tpo -c -o urbackupclient/urbackupclientbackend-common_tokens.o `test -f 'urbackupclient/common_tokens.cpp' || echo './'`urbackupclient/common_tokens.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-lin_ver.Tpo urbackupclient/.deps/urbackupclientbackend-lin_ver.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-FileMetadataDownloadThread.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-FileMetadataDownloadThread.Tpo -c -o urbackupclient/urbackupclientbackend-FileMetadataDownloadThread.o `test -f 'urbackupclient/FileMetadataDownloadThread.cpp' || echo './'`urbackupclient/FileMetadataDownloadThread.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-common_tokens.Tpo urbackupclient/.deps/urbackupclientbackend-common_tokens.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-RestoreFiles.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-RestoreFiles.Tpo -c -o urbackupclient/urbackupclientbackend-RestoreFiles.o `test -f 'urbackupclient/RestoreFiles.cpp' || echo './'`urbackupclient/RestoreFiles.cpp
+In file included from urbackupclient/RestoreFiles.cpp:19:0:
+urbackupclient/RestoreFiles.h:26:7: warning: ‘RestoreFiles’ has a field ‘RestoreFiles::curr_restore_updater’ whose type uses the anonymous namespace
+ class RestoreFiles : public IThread, public FileClient::ReconnectionCallback, public FileClientChunked::ReconnectionCallback, FileClient::ProgressLogCallback
+       ^
+In file included from urbackupclient/RestoreFiles.cpp:23:0:
+urbackupclient/RestoreDownloadThread.h:59:7: warning: ‘RestoreDownloadThread’ has a field ‘RestoreDownloadThread::dl_queue’ whose type uses the anonymous namespace
+ class RestoreDownloadThread : public IThread, public FileClient::QueueCallback, public FileClientChunked::QueueCallback
+       ^
+In file included from urbackupclient/FileMetadataDownloadThread.h:4:0,
+                 from urbackupclient/FileMetadataDownloadThread.cpp:19:
+urbackupclient/RestoreFiles.h:26:7: warning: ‘RestoreFiles’ has a field ‘RestoreFiles::curr_restore_updater’ whose type uses the anonymous namespace
+ class RestoreFiles : public IThread, public FileClient::ReconnectionCallback, public FileClientChunked::ReconnectionCallback, FileClient::ProgressLogCallback
+       ^
+mv -f urbackupclient/.deps/urbackupclientbackend-lin_tokens.Tpo urbackupclient/.deps/urbackupclientbackend-lin_tokens.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-RestoreDownloadThread.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-RestoreDownloadThread.Tpo -c -o urbackupclient/urbackupclientbackend-RestoreDownloadThread.o `test -f 'urbackupclient/RestoreDownloadThread.cpp' || echo './'`urbackupclient/RestoreDownloadThread.cpp
+In file included from urbackupclient/RestoreDownloadThread.cpp:19:0:
+urbackupclient/RestoreDownloadThread.h:59:7: warning: ‘RestoreDownloadThread’ has a field ‘RestoreDownloadThread::dl_queue’ whose type uses the anonymous namespace
+ class RestoreDownloadThread : public IThread, public FileClient::QueueCallback, public FileClientChunked::QueueCallback
+       ^
+mv -f sqlite/.deps/urbackupclientbackend-sqlite3.Tpo sqlite/.deps/urbackupclientbackend-sqlite3.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT urbackupclient/urbackupclientbackend-TokenCallback.o -MD -MP -MF urbackupclient/.deps/urbackupclientbackend-TokenCallback.Tpo -c -o urbackupclient/urbackupclientbackend-TokenCallback.o `test -f 'urbackupclient/TokenCallback.cpp' || echo './'`urbackupclient/TokenCallback.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-FileMetadataDownloadThread.Tpo urbackupclient/.deps/urbackupclientbackend-FileMetadataDownloadThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-dllmain.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-dllmain.Tpo -c -o fileservplugin/urbackupclientbackend-dllmain.o `test -f 'fileservplugin/dllmain.cpp' || echo './'`fileservplugin/dllmain.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-client.Tpo urbackupclient/.deps/urbackupclientbackend-client.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-bufmgr.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-bufmgr.Tpo -c -o fileservplugin/urbackupclientbackend-bufmgr.o `test -f 'fileservplugin/bufmgr.cpp' || echo './'`fileservplugin/bufmgr.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-TokenCallback.Tpo urbackupclient/.deps/urbackupclientbackend-TokenCallback.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-CClientThread.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-CClientThread.Tpo -c -o fileservplugin/urbackupclientbackend-CClientThread.o `test -f 'fileservplugin/CClientThread.cpp' || echo './'`fileservplugin/CClientThread.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-bufmgr.Tpo fileservplugin/.deps/urbackupclientbackend-bufmgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-CriticalSection.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-CriticalSection.Tpo -c -o fileservplugin/urbackupclientbackend-CriticalSection.o `test -f 'fileservplugin/CriticalSection.cpp' || echo './'`fileservplugin/CriticalSection.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-dllmain.Tpo fileservplugin/.deps/urbackupclientbackend-dllmain.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-CTCPFileServ.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-CTCPFileServ.Tpo -c -o fileservplugin/urbackupclientbackend-CTCPFileServ.o `test -f 'fileservplugin/CTCPFileServ.cpp' || echo './'`fileservplugin/CTCPFileServ.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-CriticalSection.Tpo fileservplugin/.deps/urbackupclientbackend-CriticalSection.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-CUDPThread.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-CUDPThread.Tpo -c -o fileservplugin/urbackupclientbackend-CUDPThread.o `test -f 'fileservplugin/CUDPThread.cpp' || echo './'`fileservplugin/CUDPThread.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-RestoreDownloadThread.Tpo urbackupclient/.deps/urbackupclientbackend-RestoreDownloadThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-FileServ.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-FileServ.Tpo -c -o fileservplugin/urbackupclientbackend-FileServ.o `test -f 'fileservplugin/FileServ.cpp' || echo './'`fileservplugin/FileServ.cpp
+fileservplugin/CClientThread.cpp: In member function ‘bool CClientThread::GetFileBlockdiff(CRData*, bool)’:
+fileservplugin/CClientThread.cpp:1910:48: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   srv_file = Server->openFileFromHandle((void*)hFile, filename);
+                                                ^
+fileservplugin/CClientThread.cpp: In member function ‘bool CClientThread::GetFileHashAndMetadata(CRData*)’:
+fileservplugin/CClientThread.cpp:2126:60: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  std::auto_ptr<IFile> tf(Server->openFileFromHandle((void*)hFile, filename));
+                                                            ^
+mv -f fileservplugin/.deps/urbackupclientbackend-CTCPFileServ.Tpo fileservplugin/.deps/urbackupclientbackend-CTCPFileServ.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-FileServFactory.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-FileServFactory.Tpo -c -o fileservplugin/urbackupclientbackend-FileServFactory.o `test -f 'fileservplugin/FileServFactory.cpp' || echo './'`fileservplugin/FileServFactory.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-CUDPThread.Tpo fileservplugin/.deps/urbackupclientbackend-CUDPThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-log.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-log.Tpo -c -o fileservplugin/urbackupclientbackend-log.o `test -f 'fileservplugin/log.cpp' || echo './'`fileservplugin/log.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-log.Tpo fileservplugin/.deps/urbackupclientbackend-log.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-main.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-main.Tpo -c -o fileservplugin/urbackupclientbackend-main.o `test -f 'fileservplugin/main.cpp' || echo './'`fileservplugin/main.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-FileServFactory.Tpo fileservplugin/.deps/urbackupclientbackend-FileServFactory.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-map_buffer.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-map_buffer.Tpo -c -o fileservplugin/urbackupclientbackend-map_buffer.o `test -f 'fileservplugin/map_buffer.cpp' || echo './'`fileservplugin/map_buffer.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-main.Tpo fileservplugin/.deps/urbackupclientbackend-main.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-pluginmgr.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-pluginmgr.Tpo -c -o fileservplugin/urbackupclientbackend-pluginmgr.o `test -f 'fileservplugin/pluginmgr.cpp' || echo './'`fileservplugin/pluginmgr.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-map_buffer.Tpo fileservplugin/.deps/urbackupclientbackend-map_buffer.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-ChunkSendThread.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-ChunkSendThread.Tpo -c -o fileservplugin/urbackupclientbackend-ChunkSendThread.o `test -f 'fileservplugin/ChunkSendThread.cpp' || echo './'`fileservplugin/ChunkSendThread.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-FileServ.Tpo fileservplugin/.deps/urbackupclientbackend-FileServ.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-PipeFile.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-PipeFile.Tpo -c -o fileservplugin/urbackupclientbackend-PipeFile.o `test -f 'fileservplugin/PipeFile.cpp' || echo './'`fileservplugin/PipeFile.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-PipeFile.Tpo fileservplugin/.deps/urbackupclientbackend-PipeFile.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-PipeSessions.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-PipeSessions.Tpo -c -o fileservplugin/urbackupclientbackend-PipeSessions.o `test -f 'fileservplugin/PipeSessions.cpp' || echo './'`fileservplugin/PipeSessions.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-pluginmgr.Tpo fileservplugin/.deps/urbackupclientbackend-pluginmgr.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-PipeFileUnix.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-PipeFileUnix.Tpo -c -o fileservplugin/urbackupclientbackend-PipeFileUnix.o `test -f 'fileservplugin/PipeFileUnix.cpp' || echo './'`fileservplugin/PipeFileUnix.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-PipeFileUnix.Tpo fileservplugin/.deps/urbackupclientbackend-PipeFileUnix.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-PipeFileBase.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-PipeFileBase.Tpo -c -o fileservplugin/urbackupclientbackend-PipeFileBase.o `test -f 'fileservplugin/PipeFileBase.cpp' || echo './'`fileservplugin/PipeFileBase.cpp
+mv -f urbackupclient/.deps/urbackupclientbackend-RestoreFiles.Tpo urbackupclient/.deps/urbackupclientbackend-RestoreFiles.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-FileMetadataPipe.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-FileMetadataPipe.Tpo -c -o fileservplugin/urbackupclientbackend-FileMetadataPipe.o `test -f 'fileservplugin/FileMetadataPipe.cpp' || echo './'`fileservplugin/FileMetadataPipe.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-ChunkSendThread.Tpo fileservplugin/.deps/urbackupclientbackend-ChunkSendThread.Po
+g++ -DHAVE_CONFIG_H -I.  -fstack-protector-strong --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fPIE  -I/usr/include -I/usr/include -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer -MT fileservplugin/urbackupclientbackend-PipeFileTar.o -MD -MP -MF fileservplugin/.deps/urbackupclientbackend-PipeFileTar.Tpo -c -o fileservplugin/urbackupclientbackend-PipeFileTar.o `test -f 'fileservplugin/PipeFileTar.cpp' || echo './'`fileservplugin/PipeFileTar.cpp
+mv -f fileservplugin/.deps/urbackupclientbackend-PipeFileBase.Tpo fileservplugin/.deps/urbackupclientbackend-PipeFileBase.Po
+mv -f fileservplugin/.deps/urbackupclientbackend-PipeSessions.Tpo fileservplugin/.deps/urbackupclientbackend-PipeSessions.Po
+g++ -DOS_FUNC_NO_NET -DOS_FUNC_NO_SERVER -DLINUX -DVARDIR='"/usr/local/var"' -march=amdfam10 -O2 -pipe -fomit-frame-pointer  -L/usr/lib -L/usr/lib -o urbackupclientctl clientctl/urbackupclientctl-main.o urbackupcommon/urbackupclientctl-os_functions_lin.o urbackupclientctl-stringtools.o clientctl/urbackupclientctl-Connector.o clientctl/urbackupclientctl-tcpstack.o urbackupcommon/urbackupclientctl-escape.o clientctl/urbackupclientctl-jsoncpp.o  -lz 
+mv -f fileservplugin/.deps/urbackupclientbackend-CClientThread.Tpo fileservplugin/.deps/urbackupclientbackend-CClientThread.Po
+mv -f fileservplugin/.deps/urbackupclientbackend-FileMetadataPipe.Tpo fileservplugin/.deps/urbackupclientbackend-FileMetadataPipe.Po
+mv -f fileservplugin/.deps/urbackupclientbackend-PipeFileTar.Tpo fileservplugin/.deps/urbackupclientbackend-PipeFileTar.Po
+g++ -pthread -DLINUX -DSTATIC_PLUGIN -DVARDIR='"/usr/local/var"' -DSYSCONFDIR='"/usr/local/etc"' -DDATADIR='"/usr/local/share"'   -march=amdfam10 -O2 -pipe -fomit-frame-pointer   -Wl,-z,relro -L/usr/lib -L/usr/lib -o urbackupclientbackend urbackupclientbackend-AcceptThread.o urbackupclientbackend-Client.o urbackupclientbackend-Database.o urbackupclientbackend-Query.o urbackupclientbackend-SelectThread.o urbackupclientbackend-Server.o urbackupclientbackend-ServerLinux.o urbackupclientbackend-ServiceAcceptor.o urbackupclientbackend-ServiceWorker.o urbackupclientbackend-SessionMgr.o urbackupclientbackend-StreamPipe.o urbackupclientbackend-Template.o urbackupclientbackend-WorkerThread.o urbackupclientbackend-main.o urbackupclientbackend-md5.o urbackupclientbackend-stringtools.o libfastcgi/urbackupclientbackend-fastcgi.o urbackupclientbackend-Mutex_lin.o urbackupclientbackend-LoadbalancerClient.o urbackupclientbackend-DBSettingsReader.o urbackupclientbackend-file_common.o urbackupclientbackend-file_fstream.o urbackupclientbackend-file_linux.o urbackupclientbackend-FileSettingsReader.o urbackupclientbackend-LookupService.o urbackupclientbackend-SettingsReader.o urbackupclientbackend-Table.o urbackupclientbackend-OutputStream.o urbackupclientbackend-ThreadPool.o urbackupclientbackend-MemoryPipe.o urbackupclientbackend-Condition_lin.o urbackupclientbackend-MemorySettingsReader.o sqlite/urbackupclientbackend-sqlite3.o sqlite/urbackupclientbackend-shell.o urbackupclientbackend-SQLiteFactory.o urbackupclientbackend-PipeThrottler.o urbackupclientbackend-mt19937ar.o urbackupclientbackend-DatabaseCursor.o urbackupclientbackend-SharedMutex_lin.o urbackupclientbackend-StaticPluginRegistration.o common/urbackupclientbackend-data.o common/urbackupclientbackend-adler32.o urbackupcommon/urbackupclientbackend-os_functions_lin.o urbackupcommon/sha2/urbackupclientbackend-sha2.o urbackupcommon/fileclient/urbackupclientbackend-FileClient.o urbackupcommon/fileclient/urbackupclientbackend-tcpstack.o urbackupcommon/urbackupclientbackend-escape.o urbackupcommon/urbackupclientbackend-bufmgr.o urbackupcommon/urbackupclientbackend-json.o urbackupcommon/urbackupclientbackend-CompressedPipe.o urbackupcommon/urbackupclientbackend-InternetServicePipe2.o urbackupcommon/urbackupclientbackend-settingslist.o urbackupcommon/fileclient/urbackupclientbackend-FileClientChunked.o urbackupcommon/urbackupclientbackend-InternetServicePipe.o urbackupcommon/urbackupclientbackend-filelist_utils.o urbackupcommon/urbackupclientbackend-file_metadata.o urbackupcommon/urbackupclientbackend-glob.o urbackupcommon/urbackupclientbackend-chunk_hasher.o urbackupcommon/urbackupclientbackend-CompressedPipe2.o urbackupcommon/urbackupclientbackend-SparseFile.o urbackupcommon/urbackupclientbackend-ExtentIterator.o urbackupcommon/urbackupclientbackend-TreeHash.o urbackupcommon/urbackupclientbackend-WalCheckpointThread.o cryptoplugin/urbackupclientbackend-dllmain.o cryptoplugin/urbackupclientbackend-AESDecryption.o cryptoplugin/urbackupclientbackend-CryptoFactory.o cryptoplugin/urbackupclientbackend-pluginmgr.o cryptoplugin/urbackupclientbackend-AESEncryption.o cryptoplugin/urbackupclientbackend-ZlibCompression.o cryptoplugin/urbackupclientbackend-ZlibDecompression.o cryptoplugin/urbackupclientbackend-AESGCMDecryption.o cryptoplugin/urbackupclientbackend-AESGCMEncryption.o cryptoplugin/urbackupclientbackend-ECDHKeyExchange.o  fsimageplugin/urbackupclientbackend-dllmain.o fsimageplugin/urbackupclientbackend-filesystem.o fsimageplugin/urbackupclientbackend-FSImageFactory.o fsimageplugin/urbackupclientbackend-pluginmgr.o fsimageplugin/urbackupclientbackend-vhdfile.o fsimageplugin/fs/urbackupclientbackend-ntfs.o fsimageplugin/fs/urbackupclientbackend-unknown.o fsimageplugin/urbackupclientbackend-CompressedFile.o fsimageplugin/urbackupclientbackend-LRUMemCache.o fsimageplugin/urbackupclientbackend-cowfile.o fsimageplugin/urbackupclientbackend-FileWrapper.o fsimageplugin/urbackupclientbackend-ClientBitmap.o urbackupclient/urbackupclientbackend-dllmain.o urbackupclient/urbackupclientbackend-clientdao.o urbackupclient/urbackupclientbackend-client.o urbackupclient/urbackupclientbackend-ClientService.o urbackupclient/urbackupclientbackend-ClientSend.o urbackupclient/urbackupclientbackend-client_restore.o urbackupclient/urbackupclientbackend-ServerIdentityMgr.o urbackupclient/urbackupclientbackend-ClientServiceCMD.o urbackupclient/urbackupclientbackend-ImageThread.o urbackupclient/urbackupclientbackend-InternetClient.o urbackupclient/urbackupclientbackend-file_permissions.o urbackupclient/urbackupclientbackend-lin_ver.o urbackupclient/urbackupclientbackend-lin_tokens.o urbackupclient/urbackupclientbackend-common_tokens.o urbackupclient/urbackupclientbackend-FileMetadataDownloadThread.o urbackupclient/urbackupclientbackend-RestoreFiles.o urbackupclient/urbackupclientbackend-RestoreDownloadThread.o urbackupclient/urbackupclientbackend-TokenCallback.o common/urbackupclientbackend-miniz.o urbackupclient/urbackupclientbackend-cmdline_preprocessor.o fileservplugin/urbackupclientbackend-dllmain.o fileservplugin/urbackupclientbackend-bufmgr.o fileservplugin/urbackupclientbackend-CClientThread.o fileservplugin/urbackupclientbackend-CriticalSection.o fileservplugin/urbackupclientbackend-CTCPFileServ.o fileservplugin/urbackupclientbackend-CUDPThread.o fileservplugin/urbackupclientbackend-FileServ.o fileservplugin/urbackupclientbackend-FileServFactory.o fileservplugin/urbackupclientbackend-log.o fileservplugin/urbackupclientbackend-main.o fileservplugin/urbackupclientbackend-map_buffer.o fileservplugin/urbackupclientbackend-pluginmgr.o fileservplugin/urbackupclientbackend-ChunkSendThread.o fileservplugin/urbackupclientbackend-PipeFile.o fileservplugin/urbackupclientbackend-PipeSessions.o fileservplugin/urbackupclientbackend-PipeFileUnix.o fileservplugin/urbackupclientbackend-PipeFileBase.o fileservplugin/urbackupclientbackend-FileMetadataPipe.o fileservplugin/urbackupclientbackend-PipeFileTar.o  -ldl -lcryptopp -lz 
+make[1]: Leaving directory '/root/tmp/urbackup/urbackup-client-2.1.7.0'
