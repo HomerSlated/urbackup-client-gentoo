@@ -56,4 +56,11 @@ src_install() {
 	newins "${FILESDIR}"/logrotate_urbackupclient urbackupclient
 	newconfd defaults_client urbackupclient
 	doinitd "${FILESDIR}"/urbackupclient
+	insinto "${EPREFIX}"/usr/share/urbackup
+	doins "${FILESDIR}"/btrfs_create_filesystem_snapshot
+	doins "${FILESDIR}"/btrfs_remove_filesystem_snapshot
+	doins "${FILESDIR}"/dattobd_create_filesystem_snapshot
+	doins "${FILESDIR}"/dattobd_remove_filesystem_snapshot
+	doins "${FILESDIR}"/lvm_create_filesystem_snapshot
+	doins "${FILESDIR}"/lvm_remove_filesystem_snapshot
 }
