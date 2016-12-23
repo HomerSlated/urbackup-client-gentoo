@@ -16,11 +16,11 @@ S=${WORKDIR}/${P}.0
 SLOT="0"
 LICENSE="AGPL-3"
 KEYWORDS="~amd64 ~x86"
-IUSE="gcc-fortify headless zlib linguas_cs linguas_da linguas_de linguas_es linguas_fa linguas_fr linguas_it linguas_nl linguas_pl linguas_pt_BR linguas_ru linguas_sk linguas_uk linguas_zh_CN linguas_zh_TW"
+IUSE="hardened X zlib linguas_cs linguas_da linguas_de linguas_es linguas_fa linguas_fr linguas_it linguas_nl linguas_pl linguas_pt_BR linguas_ru linguas_sk linguas_uk linguas_zh_CN linguas_zh_TW"
 
 RDEPEND="
 	dev-db/sqlite
-	!headless? ( x11-libs/wxGTK:2.9 )
+	X? ( x11-libs/wxGTK:2.9 )
 	>=dev-libs/crypto++-5.1
 	zlib? ( sys-libs/zlib )"
 DEPEND="${RDEPEND}"
@@ -35,8 +35,8 @@ PATCHES=(
 
 src_configure() {
 	econf \
-	$(use_enable gcc-fortify fortify) \
-	$(use_enable headless) \
+	$(use_enable hardened fortify) \
+	$(use_enable !X headless) \
 	$(use_with zlib) \
 	--disable-clientupdate
 }
@@ -49,14 +49,14 @@ src_install() {
 		[[ ! -e ${locale_doc} ]] || doins ${locale_doc}
 		}
 	emake DESTDIR="${D}" install
-	if use !headless
+	if use X
 		then l10n_for_each_locale_do install_locale_docs
 	fi
 	insinto "${EPREFIX}"/etc/logrotate.d
 	newins "${FILESDIR}"/logrotate_urbackupclient urbackupclient
 	newconfd defaults_client urbackupclient
 	doinitd "${FILESDIR}"/urbackupclient
-	insinto "${EPREFIX}"/usr/share/urbackup
+	insinto "${EPREFIX}"/usr/share/urbackup/scripts
 	doins "${FILESDIR}"/btrfs_create_filesystem_snapshot
 	doins "${FILESDIR}"/btrfs_remove_filesystem_snapshot
 	doins "${FILESDIR}"/dattobd_create_filesystem_snapshot
