@@ -1,0 +1,11 @@
+--- urbackup-client-2.1.7.0/Makefile.in.orig	2016-12-23 20:48:23.003684583 +0000
++++ urbackup-client-2.1.7.0/Makefile.in	2016-12-23 20:48:52.383682885 +0000
+@@ -5455,7 +5455,7 @@
+ 
+ 	for script in "$(DESTDIR)$(datadir)/urbackup/scripts/"*; do sed "s|SYSCONFDIR|$(sysconfdir)/urbackup|g" "$$script" > "$$script.r"; mv "$$script.r" "$$script"; done
+ 	chmod 700 "$(DESTDIR)$(datadir)/urbackup/scripts/"*
+-	chmod 700 "$(DESTDIR)$(sysconfdir)/urbackup/"*
++	chmod 644 "$(DESTDIR)$(sysconfdir)/urbackup/"*
+ 	$(INSTALL_DATA) "$(srcdir)/client/data/updates_h.dat" "$(DESTDIR)$(datadir)/urbackup/"
+ 
+ @WITH_GUI_CLIENT_TRUE@	$(MKDIR_P) "$(DESTDIR)$(datadir)/urbackup"

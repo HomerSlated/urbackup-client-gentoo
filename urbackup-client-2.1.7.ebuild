@@ -31,6 +31,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-manpage.patch"
 	"${FILESDIR}/${P}-conf.patch"
 	"${FILESDIR}/${P}-locale.patch"
+	"${FILESDIR}/${P}-etc-perms.patch"
 )
 
 src_configure() {
@@ -56,4 +57,15 @@ src_install() {
 	newins "${FILESDIR}"/logrotate_urbackupclient urbackupclient
 	newconfd defaults_client urbackupclient
 	doinitd "${FILESDIR}"/urbackupclient
+	dodir "${EPREFIX}"/etc/urbackup
+	insinto "${EPREFIX}"/etc/urbackup
+	doins "${FILESDIR}"/snapshot.cfg
+	insinto "${EPREFIX}"/usr/share/urbackup/scripts
+	insopts -m0700
+	doins "${FILESDIR}"/btrfs_create_filesystem_snapshot
+	doins "${FILESDIR}"/btrfs_remove_filesystem_snapshot
+	doins "${FILESDIR}"/dattobd_create_filesystem_snapshot
+	doins "${FILESDIR}"/dattobd_remove_filesystem_snapshot
+	doins "${FILESDIR}"/lvm_create_filesystem_snapshot
+	doins "${FILESDIR}"/lvm_remove_filesystem_snapshot
 }
