@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-inherit wxwidgets l10n
+inherit wxwidgets l10n systemd
 
 PLOCALES="cs da de es fa fr it nl pl pt_BR ru sk uk zh_CN zh_TW"
 PLOCALE_BACKUP="en"
@@ -45,7 +45,7 @@ src_configure() {
 src_install() {
 	dodir "${EPREFIX}"/usr/share/man/man1
 	install_locale_docs() {
-    local locale_doc="client/data/lang/$1/urbackup.mo"
+	local locale_doc="client/data/lang/$1/urbackup.mo"
 		insinto "${EPREFIX}"/usr/share/locale/$1/LC_MESSAGES
 		[[ ! -e ${locale_doc} ]] || doins ${locale_doc}
 		}
@@ -57,6 +57,7 @@ src_install() {
 	newins "${FILESDIR}"/logrotate_urbackupclient urbackupclient
 	newconfd defaults_client urbackupclient
 	doinitd "${FILESDIR}"/urbackupclient
+	systemd_dounit "${FILESDIR}"/urbackup-client.service
 	dodir "${EPREFIX}"/etc/urbackup
 	insinto "${EPREFIX}"/etc/urbackup
 	doins "${FILESDIR}"/snapshot.cfg

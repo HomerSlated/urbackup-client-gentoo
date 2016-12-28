@@ -2,6 +2,13 @@
 # Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/skel.ChangeLog,v 1.2 2006/02/22 02:08:04 hd_brummy Exp $
 
+  28 Dec 2016; HomerSlated urbackup-client-2.0.36.ebuild,
+  urbackup-client-2.1.7.ebuild, +files/urbackup-client.service:
+
+
+  Added systemd service
+
+
   23 Dec 2016; HomerSlated urbackup-client-2.0.36.ebuild,
   urbackup-client-2.1.7.ebuild, +files/urbackup-client-2.0.36-etc-perms.patch,
   +files/urbackup-client-2.1.7-etc-perms.patch,
